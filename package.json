@@ -1,0 +1,49 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "E-commerce made with react",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --open --mode development --env development",
+    "build": "webpack --mode production --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PykyE/E-commerce.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "react",
+    "redux"
+  ],
+  "author": "Miguel Rico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PykyE/E-commerce/issues"
+  },
+  "homepage": "https://github.com/PykyE/E-commerce#readme",
+  "dependencies": {
+    "react-router-dom": "^6.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^9.2.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.1.0",
+    "react-dom": "^17.0.2",
+    "sass": "^1.46.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  }
+}
