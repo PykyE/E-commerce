@@ -51,7 +51,7 @@ const sassRules = {
   test: /\.s[ac]ss$/i,
   use: [
     "style-loader",
-    { loader: "css-loader", options: { modules: true } },
+    "css-loader",
     "sass-loader",
   ],
 };
@@ -69,6 +69,13 @@ const config = {
   },
   resolve: {
     extensions: [".jsx", ".js", ".scss", ".css"],
+    alias: {
+      Pages: path.resolve(__dirname, 'src/Pages/'),
+      Sass: path.resolve(__dirname, 'src/Sass/'),
+      Components: path.resolve(__dirname, 'src/Components/'),
+      Layouts: path.resolve(__dirname, 'src/Layouts/'),
+      Redux: path.resolve(__dirname, 'src/Redux/')
+    }
   },
   module: {
     rules: [jsRules, cssRules, sassRules],

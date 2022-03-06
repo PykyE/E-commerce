@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
-
+import { AiOutlineShoppingCart } from "react-icons/ai";
 export default class Header extends Component {
   render() {
     return (
-      <Navbar
-        style={{ backgroundColor: "red" }}
-        className={"test"}
-        bg="light"
-        expand="lg"
-      >
+      <Navbar className="navbar" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">e-commerce</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <AiOutlineShoppingCart
+              style={{
+                marginBottom: "4px",
+              }}
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
